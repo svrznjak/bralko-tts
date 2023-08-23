@@ -1,0 +1,7 @@
+{
+  "name": "Bralko TTS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
