@@ -1,12 +1,18 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'Bralko TTS',
-  webDir: 'dist',
+  appId: "io.ionic.starter",
+  appName: "Bralko TTS",
+  webDir: "dist",
   server: {
-    androidScheme: 'https'
-  }
+    androidScheme: "https",
+  },
+  plugins: {
+    FirebaseAuthentication: {
+      skipNativeAuth: false,
+      providers: ["google.com"],
+    },
+  },
 };
 
 export default config;
